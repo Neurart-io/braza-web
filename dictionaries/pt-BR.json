@@ -1,0 +1,327 @@
+{
+  "navbar": {
+    "solutions": "Soluções",
+    "aboutUs": "Quem somos",
+    "contact": "Entre em contato",
+    "viewAllSolutions": "Ver todas as soluções"
+  },
+  "hero": {
+    "title": {
+      "first": "Escale seu Negócio com",
+      "highlighted": "Automação e Inteligência Artificial"
+    },
+    "description": "Transformamos processos empresariais complexos em soluções automatizadas com IA, permitindo que sua empresa se concentre no que realmente importa.",
+    "button": {
+      "default": "Entre em contato",
+      "hover": "Vamos!"
+    }
+  },
+  "services": {
+    "title": {
+      "first": "Nossas",
+      "highlighted": "Soluções"
+    },
+    "description": "Desenvolvemos tecnologias avançadas que impulsionam a transformação digital das empresas.",
+    "items": [
+      {
+        "id": "automacao-processos",
+        "title": "Automação de Processos",
+        "description": "Otimize fluxos de trabalho e elimine tarefas repetitivas com nossas soluções de automação inteligente."
+      },
+      {
+        "id": "ia-conversacional",
+        "title": "IA Conversacional",
+        "description": "Assistentes virtuais e chatbots avançados que transformam a experiência de atendimento ao cliente."
+      },
+      {
+        "id": "web-scraping",
+        "title": "Web Scraping e Extração de Dados",
+        "description": "Monitore preços, tendências e extraia dados de sites para inteligência de negócios."
+      },
+      {
+        "id": "automacao-marketing",
+        "title": "Automação em Marketing",
+        "description": "Envie e-mails automáticos, capture leads e faça follow-ups sem esforço."
+      },
+      {
+        "id": "integracao-sistemas",
+        "title": "Integração de Sistemas",
+        "description": "Conecte plataformas e aplicações para um fluxo de dados contínuo e eficiente."
+      },
+      {
+        "id": "dev-customizado",
+        "title": "Dev Customizado",
+        "description": "Soluções de software sob medida para os desafios específicos do seu negócio."
+      },
+      {
+        "id": "seguranca-dados",
+        "title": "Segurança de Dados",
+        "description": "Proteção robusta para seus dados e sistemas com as melhores práticas de segurança."
+      }
+    ]
+  },
+  "about": {
+    "title": {
+      "first": "Transformando",
+      "highlighted": "negócios"
+    },
+    "description": "Nossas soluções de automação com IA estão ajudando empresas a alcançar novos patamares de eficiência e inovação.",
+    "metrics": [
+      {
+        "value": "85%",
+        "title": "Redução de tempo",
+        "description": "Em processos operacionais através da automação inteligente."
+      },
+      {
+        "value": "3x",
+        "title": "Aumento de produtividade",
+        "description": "Com a implementação de soluções de IA personalizadas."
+      },
+      {
+        "value": "100-500%",
+        "title": "ROI em 1 e 2 anos",
+        "description": "Retorno sobre investimento com nossas soluções de automação."
+      }
+    ]
+  },
+  "contact": {
+    "title": {
+      "highlighted": "Entre em contato"
+    },
+    "description": "Estamos prontos para discutir como podemos ajudar sua empresa a alcançar novos patamares com nossas soluções de automação inteligente.",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "company": "Empresa",
+      "message": "Mensagem",
+      "messagePlaceholder": "Como podemos ajudar sua empresa?",
+      "button": {
+        "default": "Enviar mensagem",
+        "sending": "Enviando..."
+      },
+      "success": {
+        "title": "Mensagem enviada!",
+        "description": "Agradecemos seu contato. Nossa equipe retornará em breve."
+      }
+    }
+  },
+  "footer": {
+    "description": "Transformando empresas através da automação inteligente e soluções de IA personalizadas.",
+    "navigation": {
+      "title": "Navegação",
+      "items": [
+        {
+          "title": "O que fazemos",
+          "href": "#"
+        },
+        {
+          "title": "Soluções",
+          "href": "#"
+        },
+        {
+          "title": "Quem somos",
+          "href": "#"
+        },
+        {
+          "title": "Contato",
+          "href": "#contact"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contato",
+      "button": "Entre em contato"
+    },
+    "copyright": "Todos os direitos reservados."
+  },
+  "solutions": {
+    "title": {
+      "first": "Nossas",
+      "highlighted": "Soluções"
+    },
+    "description": "Desenvolvemos tecnologias avançadas que impulsionam a transformação digital das empresas, combinando automação inteligente e IA para resolver desafios complexos de negócio.",
+    "aboutSolution": "Sobre a Solução",
+    "benefits": "Benefícios",
+    "useCases": "Casos de Uso",
+    "requestInfo": "Solicitar mais informações",
+    "cta": {
+      "title": {
+        "first": "Pronto para transformar seu negócio com",
+        "highlighted": "automação inteligente"
+      },
+      "description": "Entre em contato conosco para uma consulta personalizada e descubra como nossas soluções podem impulsionar a eficiência e o crescimento da sua empresa.",
+      "button": "Fale com um especialista"
+    },
+    "items": [
+      {
+        "id": "automacao-processos",
+        "title": "Automação de Processos",
+        "description": "Otimize fluxos de trabalho e elimine tarefas repetitivas com nossas soluções de automação inteligente.",
+        "longDescription": [
+          "Nossa solução de Automação de Processos utiliza tecnologias avançadas para transformar operações manuais e repetitivas em fluxos de trabalho automatizados e eficientes.",
+          "Através da combinação de RPA (Robotic Process Automation), IA e aprendizado de máquina, criamos sistemas que podem executar tarefas complexas com mínima intervenção humana, permitindo que sua equipe se concentre em atividades estratégicas de maior valor.",
+          "Nossas automações são personalizadas para se integrar perfeitamente aos seus sistemas existentes, garantindo uma transição suave e resultados rápidos."
+        ],
+        "benefits": [
+          "Redução de até 85% no tempo gasto em tarefas operacionais",
+          "Eliminação de erros humanos em processos críticos",
+          "Escalabilidade para lidar com volumes variáveis de trabalho",
+          "Análise de dados em tempo real para tomada de decisões",
+          "ROI significativo em curto prazo"
+        ],
+        "useCases": [
+          "Processamento automatizado de documentos e faturas",
+          "Extração e validação de dados de formulários",
+          "Geração e distribuição de relatórios periódicos",
+          "Sincronização de dados entre múltiplos sistemas",
+          "Monitoramento contínuo de métricas de negócio"
+        ]
+      },
+      {
+        "id": "ia-conversacional",
+        "title": "IA Conversacional",
+        "description": "Assistentes virtuais e chatbots avançados que transformam a experiência de atendimento ao cliente.",
+        "longDescription": [
+          "Nossa solução de IA Conversacional utiliza os mais avançados modelos de linguagem para criar assistentes virtuais e chatbots que compreendem e respondem a consultas de forma natural e contextual.",
+          "Desenvolvemos assistentes inteligentes capazes de entender nuances da linguagem humana, manter o contexto da conversa e fornecer respostas precisas e personalizadas para cada cliente.",
+          "Nossas soluções podem ser integradas a múltiplos canais de comunicação, incluindo websites, aplicativos móveis, WhatsApp, Telegram e plataformas de mídia social."
+        ],
+        "benefits": [
+          "Atendimento 24/7 sem custos adicionais de pessoal",
+          "Redução de até 60% no tempo de resolução de problemas",
+          "Escalabilidade para lidar com picos de demanda",
+          "Consistência nas respostas e no atendimento",
+          "Coleta de insights valiosos sobre as necessidades dos clientes"
+        ],
+        "useCases": [
+          "Atendimento ao cliente automatizado",
+          "FAQ dinâmico e personalizado",
+          "Qualificação e triagem de leads",
+          "Agendamento de consultas e reuniões",
+          "Suporte técnico de primeiro nível"
+        ]
+      },
+      {
+        "id": "web-scraping",
+        "title": "Web Scraping e Extração de Dados",
+        "description": "Monitore preços, tendências e extraia dados de sites para inteligência de negócios.",
+        "longDescription": [
+          "Nossa solução de Web Scraping e Extração de Dados permite coletar, processar e analisar informações de diversas fontes online de forma automatizada e em tempo real.",
+          "Desenvolvemos crawlers personalizados que podem navegar por websites, extrair dados estruturados e não estruturados, e transformá-los em informações acionáveis para seu negócio.",
+          "Nossas ferramentas são projetadas para contornar desafios comuns como bloqueios de IP, CAPTCHAs e mudanças na estrutura dos sites, garantindo a continuidade da coleta de dados."
+        ],
+        "benefits": [
+          "Monitoramento contínuo de preços e produtos da concorrência",
+          "Coleta de dados de mercado para análise de tendências",
+          "Automação da pesquisa de informações em múltiplas fontes",
+          "Alertas em tempo real sobre mudanças relevantes",
+          "Enriquecimento de bases de dados com informações externas"
+        ],
+        "useCases": [
+          "Monitoramento de preços da concorrência",
+          "Coleta de dados para pesquisa de mercado",
+          "Extração de informações de produtos de e-commerces",
+          "Monitoramento de menções à marca em redes sociais",
+          "Coleta de dados públicos para análises estatísticas"
+        ]
+      },
+      {
+        "id": "automacao-marketing",
+        "title": "Automação em Marketing",
+        "description": "Envie e-mails automáticos, capture leads e faça follow-ups sem esforço.",
+        "longDescription": [
+          "Nossa solução de Automação em Marketing permite criar, executar e otimizar campanhas multicanal de forma automatizada, aumentando a eficiência e os resultados de suas estratégias de marketing.",
+          "Desenvolvemos fluxos de trabalho inteligentes que podem segmentar audiências, personalizar mensagens, programar envios e analisar resultados sem intervenção manual constante.",
+          "Nossas ferramentas se integram com as principais plataformas de marketing digital, CRMs e sistemas de e-commerce, criando um ecossistema conectado e eficiente."
+        ],
+        "benefits": [
+          "Aumento da eficiência operacional da equipe de marketing",
+          "Personalização em escala para diferentes segmentos de clientes",
+          "Nurturing de leads automatizado e consistente",
+          "Análise de desempenho em tempo real com ajustes automáticos",
+          "Otimização contínua baseada em dados de comportamento"
+        ],
+        "useCases": [
+          "Campanhas de email marketing automatizadas",
+          "Nurturing de leads com conteúdo personalizado",
+          "Recuperação de carrinhos abandonados",
+          "Programas de fidelidade e reengajamento",
+          "Campanhas cross-selling e up-selling baseadas em comportamento"
+        ]
+      },
+      {
+        "id": "integracao-sistemas",
+        "title": "Integração de Sistemas",
+        "description": "Conecte plataformas e aplicações para um fluxo de dados contínuo e eficiente.",
+        "longDescription": [
+          "Nossa solução de Integração de Sistemas permite conectar diferentes aplicações, plataformas e bancos de dados, criando um ecossistema digital coeso e eficiente para sua empresa.",
+          "Desenvolvemos APIs, webhooks e conectores personalizados que permitem a comunicação fluida entre sistemas internos e externos, eliminando silos de informação e processos manuais de transferência de dados.",
+          "Nossas integrações são projetadas para serem robustas, seguras e escaláveis, adaptando-se às mudanças em sua infraestrutura tecnológica."
+        ],
+        "benefits": [
+          "Eliminação de processos manuais de transferência de dados",
+          "Visão unificada das informações em toda a organização",
+          "Redução de erros e inconsistências de dados",
+          "Automação de processos entre diferentes departamentos",
+          "Maior agilidade na implementação de novos sistemas"
+        ],
+        "useCases": [
+          "Integração entre CRM e sistema ERP",
+          "Sincronização de dados entre plataformas de e-commerce e logística",
+          "Conexão de sistemas legados com novas aplicações",
+          "Integração de ferramentas de marketing com sistemas de vendas",
+          "Criação de dashboards unificados com dados de múltiplas fontes"
+        ]
+      },
+      {
+        "id": "dev-customizado",
+        "title": "Dev Customizado",
+        "description": "Soluções de software sob medida para os desafios específicos do seu negócio.",
+        "longDescription": [
+          "Nossa solução de Desenvolvimento Customizado cria aplicações e sistemas exclusivos, projetados especificamente para atender às necessidades únicas do seu negócio.",
+          "Desenvolvemos software sob medida utilizando metodologias ágeis e as mais modernas tecnologias, garantindo soluções escaláveis, seguras e de fácil manutenção.",
+          "Nossa abordagem inclui análise detalhada de requisitos, prototipagem, desenvolvimento iterativo e suporte contínuo, assegurando que o produto final atenda perfeitamente às suas expectativas."
+        ],
+        "benefits": [
+          "Soluções perfeitamente alinhadas às necessidades específicas do negócio",
+          "Propriedade total do código e da propriedade intelectual",
+          "Flexibilidade para evoluir o sistema conforme o crescimento da empresa",
+          "Integração perfeita com sistemas existentes",
+          "Suporte dedicado e manutenção contínua"
+        ],
+        "useCases": [
+          "Sistemas de gestão empresarial personalizados",
+          "Plataformas de e-commerce com funcionalidades exclusivas",
+          "Aplicativos móveis para necessidades específicas de negócio",
+          "Dashboards e ferramentas de análise de dados customizadas",
+          "Sistemas de automação industrial e IoT"
+        ]
+      },
+      {
+        "id": "seguranca-dados",
+        "title": "Segurança de Dados",
+        "description": "Proteção robusta para seus dados e sistemas com as melhores práticas de segurança.",
+        "longDescription": [
+          "Nossa solução de Segurança de Dados oferece proteção abrangente para informações sensíveis e sistemas críticos, utilizando as mais avançadas tecnologias e práticas de cibersegurança.",
+          "Desenvolvemos estratégias personalizadas de segurança que incluem criptografia, controle de acesso, monitoramento contínuo e resposta a incidentes, adaptadas ao perfil de risco específico da sua organização.",
+          "Nossas soluções são projetadas para proteger dados em repouso, em trânsito e em uso, garantindo conformidade com regulamentações como LGPD, GDPR e outras normas setoriais."
+        ],
+        "benefits": [
+          "Proteção abrangente contra ameaças cibernéticas em evolução",
+          "Redução do risco de violações de dados e seus custos associados",
+          "Conformidade com regulamentações de proteção de dados",
+          "Detecção precoce de atividades suspeitas e tentativas de invasão",
+          "Resposta rápida a incidentes de segurança"
+        ],
+        "useCases": [
+          "Implementação de políticas de segurança e governança de dados",
+          "Avaliações de vulnerabilidade e testes de penetração",
+          "Criptografia e anonimização de dados sensíveis",
+          "Monitoramento contínuo de segurança e detecção de ameaças",
+          "Treinamento de conscientização em segurança para colaboradores"
+        ]
+      }
+    ]
+  }
+}
+

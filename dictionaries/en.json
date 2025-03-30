@@ -1,0 +1,327 @@
+{
+  "navbar": {
+    "solutions": "Solutions",
+    "aboutUs": "About Us",
+    "contact": "Contact Us",
+    "viewAllSolutions": "View all solutions"
+  },
+  "hero": {
+    "title": {
+      "first": "Scale Your Business with",
+      "highlighted": "Automation and Artificial Intelligence"
+    },
+    "description": "We transform complex business processes into automated AI solutions, allowing your company to focus on what really matters.",
+    "button": {
+      "default": "Contact Us",
+      "hover": "Let's Go!"
+    }
+  },
+  "services": {
+    "title": {
+      "first": "Our",
+      "highlighted": "Solutions"
+    },
+    "description": "We develop advanced technologies that drive digital transformation for businesses.",
+    "items": [
+      {
+        "id": "automacao-processos",
+        "title": "Process Automation",
+        "description": "Optimize workflows and eliminate repetitive tasks with our intelligent automation solutions."
+      },
+      {
+        "id": "ia-conversacional",
+        "title": "Conversational AI",
+        "description": "Advanced virtual assistants and chatbots that transform the customer service experience."
+      },
+      {
+        "id": "web-scraping",
+        "title": "Web Scraping & Data Extraction",
+        "description": "Monitor prices, trends, and extract data from websites for business intelligence."
+      },
+      {
+        "id": "automacao-marketing",
+        "title": "Marketing Automation",
+        "description": "Send automated emails, capture leads, and follow up effortlessly."
+      },
+      {
+        "id": "integracao-sistemas",
+        "title": "Systems Integration",
+        "description": "Connect platforms and applications for continuous and efficient data flow."
+      },
+      {
+        "id": "dev-customizado",
+        "title": "Custom Development",
+        "description": "Tailored software solutions for your business's specific challenges."
+      },
+      {
+        "id": "seguranca-dados",
+        "title": "Data Security",
+        "description": "Robust protection for your data and systems with best security practices."
+      }
+    ]
+  },
+  "about": {
+    "title": {
+      "first": "Transforming",
+      "highlighted": "businesses"
+    },
+    "description": "Our AI automation solutions are helping companies reach new levels of efficiency and innovation.",
+    "metrics": [
+      {
+        "value": "85%",
+        "title": "Time Reduction",
+        "description": "In operational processes through intelligent automation."
+      },
+      {
+        "value": "3x",
+        "title": "Productivity Increase",
+        "description": "With the implementation of customized AI solutions."
+      },
+      {
+        "value": "100-500%",
+        "title": "ROI in 1-2 years",
+        "description": "Return on investment with our automation solutions."
+      }
+    ]
+  },
+  "contact": {
+    "title": {
+      "highlighted": "Contact Us"
+    },
+    "description": "We're ready to discuss how we can help your company reach new heights with our intelligent automation solutions.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "messagePlaceholder": "How can we help your company?",
+      "button": {
+        "default": "Send Message",
+        "sending": "Sending..."
+      },
+      "success": {
+        "title": "Message Sent!",
+        "description": "Thank you for your contact. Our team will get back to you soon."
+      }
+    }
+  },
+  "footer": {
+    "description": "Transforming companies through intelligent automation and customized AI solutions.",
+    "navigation": {
+      "title": "Navigation",
+      "items": [
+        {
+          "title": "What We Do",
+          "href": "#"
+        },
+        {
+          "title": "Solutions",
+          "href": "#"
+        },
+        {
+          "title": "About Us",
+          "href": "#"
+        },
+        {
+          "title": "Contact",
+          "href": "#contact"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "button": "Contact Us"
+    },
+    "copyright": "All rights reserved."
+  },
+  "solutions": {
+    "title": {
+      "first": "Our",
+      "highlighted": "Solutions"
+    },
+    "description": "We develop advanced technologies that drive digital transformation for businesses, combining intelligent automation and AI to solve complex business challenges.",
+    "aboutSolution": "About the Solution",
+    "benefits": "Benefits",
+    "useCases": "Use Cases",
+    "requestInfo": "Request More Information",
+    "cta": {
+      "title": {
+        "first": "Ready to transform your business with",
+        "highlighted": "intelligent automation"
+      },
+      "description": "Contact us for a personalized consultation and discover how our solutions can boost your company's efficiency and growth.",
+      "button": "Talk to an Expert"
+    },
+    "items": [
+      {
+        "id": "automacao-processos",
+        "title": "Process Automation",
+        "description": "Optimize workflows and eliminate repetitive tasks with our intelligent automation solutions.",
+        "longDescription": [
+          "Our Process Automation solution uses advanced technologies to transform manual and repetitive operations into automated and efficient workflows.",
+          "Through the combination of RPA (Robotic Process Automation), AI, and machine learning, we create systems that can perform complex tasks with minimal human intervention, allowing your team to focus on higher-value strategic activities.",
+          "Our automations are customized to integrate seamlessly with your existing systems, ensuring a smooth transition and quick results."
+        ],
+        "benefits": [
+          "Up to 85% reduction in time spent on operational tasks",
+          "Elimination of human errors in critical processes",
+          "Scalability to handle variable workloads",
+          "Real-time data analysis for decision making",
+          "Significant ROI in the short term"
+        ],
+        "useCases": [
+          "Automated document and invoice processing",
+          "Form data extraction and validation",
+          "Generation and distribution of periodic reports",
+          "Data synchronization between multiple systems",
+          "Continuous monitoring of business metrics"
+        ]
+      },
+      {
+        "id": "ia-conversacional",
+        "title": "Conversational AI",
+        "description": "Advanced virtual assistants and chatbots that transform the customer service experience.",
+        "longDescription": [
+          "Our Conversational AI solution uses the most advanced language models to create virtual assistants and chatbots that understand and respond to queries in a natural and contextual way.",
+          "We develop intelligent assistants capable of understanding nuances of human language, maintaining conversation context, and providing accurate and personalized responses for each customer.",
+          "Our solutions can be integrated with multiple communication channels, including websites, mobile apps, WhatsApp, Telegram, and social media platforms."
+        ],
+        "benefits": [
+          "24/7 service without additional personnel costs",
+          "Up to 60% reduction in problem resolution time",
+          "Scalability to handle demand peaks",
+          "Consistency in responses and service",
+          "Collection of valuable insights about customer needs"
+        ],
+        "useCases": [
+          "Automated customer service",
+          "Dynamic and personalized FAQ",
+          "Lead qualification and triage",
+          "Appointment and meeting scheduling",
+          "First-level technical support"
+        ]
+      },
+      {
+        "id": "web-scraping",
+        "title": "Web Scraping & Data Extraction",
+        "description": "Monitor prices, trends, and extract data from websites for business intelligence.",
+        "longDescription": [
+          "Our Web Scraping and Data Extraction solution allows you to collect, process, and analyze information from various online sources in an automated and real-time manner.",
+          "We develop customized crawlers that can navigate websites, extract structured and unstructured data, and transform them into actionable information for your business.",
+          "Our tools are designed to overcome common challenges such as IP blocks, CAPTCHAs, and changes in website structure, ensuring continuity of data collection."
+        ],
+        "benefits": [
+          "Continuous monitoring of competitor prices and products",
+          "Market data collection for trend analysis",
+          "Automation of information research across multiple sources",
+          "Real-time alerts about relevant changes",
+          "Enrichment of databases with external information"
+        ],
+        "useCases": [
+          "Competitor price monitoring",
+          "Data collection for market research",
+          "Product information extraction from e-commerce sites",
+          "Brand mention monitoring on social networks",
+          "Public data collection for statistical analysis"
+        ]
+      },
+      {
+        "id": "automacao-marketing",
+        "title": "Marketing Automation",
+        "description": "Send automated emails, capture leads, and follow up effortlessly.",
+        "longDescription": [
+          "Our Marketing Automation solution allows you to create, execute, and optimize multichannel campaigns in an automated way, increasing the efficiency and results of your marketing strategies.",
+          "We develop intelligent workflows that can segment audiences, personalize messages, schedule sends, and analyze results without constant manual intervention.",
+          "Our tools integrate with major digital marketing platforms, CRMs, and e-commerce systems, creating a connected and efficient ecosystem."
+        ],
+        "benefits": [
+          "Increased operational efficiency of the marketing team",
+          "Personalization at scale for different customer segments",
+          "Automated and consistent lead nurturing",
+          "Real-time performance analysis with automatic adjustments",
+          "Continuous optimization based on behavioral data"
+        ],
+        "useCases": [
+          "Automated email marketing campaigns",
+          "Lead nurturing with personalized content",
+          "Abandoned cart recovery",
+          "Loyalty and re-engagement programs",
+          "Behavior-based cross-selling and up-selling campaigns"
+        ]
+      },
+      {
+        "id": "integracao-sistemas",
+        "title": "Systems Integration",
+        "description": "Connect platforms and applications for continuous and efficient data flow.",
+        "longDescription": [
+          "Our Systems Integration solution allows you to connect different applications, platforms, and databases, creating a cohesive and efficient digital ecosystem for your company.",
+          "We develop APIs, webhooks, and custom connectors that enable fluid communication between internal and external systems, eliminating information silos and manual data transfer processes.",
+          "Our integrations are designed to be robust, secure, and scalable, adapting to changes in your technological infrastructure."
+        ],
+        "benefits": [
+          "Elimination of manual data transfer processes",
+          "Unified view of information across the organization",
+          "Reduction of errors and data inconsistencies",
+          "Process automation between different departments",
+          "Greater agility in implementing new systems"
+        ],
+        "useCases": [
+          "Integration between CRM and ERP systems",
+          "Data synchronization between e-commerce and logistics platforms",
+          "Connection of legacy systems with new applications",
+          "Integration of marketing tools with sales systems",
+          "Creation of unified dashboards with data from multiple sources"
+        ]
+      },
+      {
+        "id": "dev-customizado",
+        "title": "Custom Development",
+        "description": "Tailored software solutions for your business's specific challenges.",
+        "longDescription": [
+          "Our Custom Development solution creates exclusive applications and systems, specifically designed to meet the unique needs of your business.",
+          "We develop custom software using agile methodologies and the most modern technologies, ensuring scalable, secure, and easy-to-maintain solutions.",
+          "Our approach includes detailed requirements analysis, prototyping, iterative development, and continuous support, ensuring that the final product perfectly meets your expectations."
+        ],
+        "benefits": [
+          "Solutions perfectly aligned with the specific needs of the business",
+          "Total ownership of code and intellectual property",
+          "Flexibility to evolve the system as the company grows",
+          "Perfect integration with existing systems",
+          "Dedicated support and continuous maintenance"
+        ],
+        "useCases": [
+          "Custom business management systems",
+          "E-commerce platforms with exclusive features",
+          "Mobile apps for specific business needs",
+          "Custom dashboards and data analysis tools",
+          "Industrial automation and IoT systems"
+        ]
+      },
+      {
+        "id": "seguranca-dados",
+        "title": "Data Security",
+        "description": "Robust protection for your data and systems with best security practices.",
+        "longDescription": [
+          "Our Data Security solution offers comprehensive protection for sensitive information and critical systems, using the most advanced cybersecurity technologies and practices.",
+          "We develop personalized security strategies that include encryption, access control, continuous monitoring, and incident response, adapted to the specific risk profile of your organization.",
+          "Our solutions are designed to protect data at rest, in transit, and in use, ensuring compliance with regulations such as GDPR and other industry standards."
+        ],
+        "benefits": [
+          "Comprehensive protection against evolving cyber threats",
+          "Reduction of data breach risk and associated costs",
+          "Compliance with data protection regulations",
+          "Early detection of suspicious activities and intrusion attempts",
+          "Rapid response to security incidents"
+        ],
+        "useCases": [
+          "Implementation of security policies and data governance",
+          "Vulnerability assessments and penetration testing",
+          "Encryption and anonymization of sensitive data",
+          "Continuous security monitoring and threat detection",
+          "Security awareness training for employees"
+        ]
+      }
+    ]
+  }
+}
+
