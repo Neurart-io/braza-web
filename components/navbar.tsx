@@ -1,40 +1,62 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Menu, X, ChevronDown } from "lucide-react"
-import LanguageSwitcher from "./language-switcher"
-import type { Locale } from "@/i18n-config"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Menu, X, ChevronDown } from "lucide-react";
+import LanguageSwitcher from "./language-switcher";
+import type { Locale } from "@/i18n-config";
 
-export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary: any }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [mobileDropdown, setMobileDropdown] = useState("")
+export default function Navbar({
+  lang,
+  dictionary,
+}: {
+  lang: Locale;
+  dictionary: any;
+}) {
+  console.log("LANG navbar", lang);
+  console.log("DICTIONARY navbar", dictionary);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setIsScrolled(true)
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Extract text values safely with fallbacks
-  const solutionsText = typeof dictionary?.solutions === "string" ? dictionary.solutions : "Solutions"
-  const aboutUsText = typeof dictionary?.aboutUs === "string" ? dictionary.aboutUs : "About Us"
-  const contactText = typeof dictionary?.contact === "string" ? dictionary.contact : "Contact"
+  const solutionsText =
+    typeof dictionary?.navbar?.solutions === "string"
+      ? dictionary.navbar.solutions
+      : "Solutions";
+  const aboutUsText =
+    typeof dictionary?.navbar?.aboutUs === "string"
+      ? dictionary.navbar.aboutUs
+      : "About Us";
+  const contactText =
+    typeof dictionary?.navbar?.contact === "string"
+      ? dictionary.navbar.contact
+      : "Contact";
   const viewAllSolutionsText =
-    typeof dictionary?.viewAllSolutions === "string" ? dictionary.viewAllSolutions : "View All Solutions"
+    typeof dictionary?.navbar?.viewAllSolutions === "string"
+      ? dictionary.navbar.viewAllSolutions
+      : "View All Solutions";
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md py-2 sm:py-3" : "bg-transparent py-3 sm:py-5"
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md py-2 sm:py-3"
+          : "bg-transparent py-3 sm:py-5"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
@@ -60,13 +82,17 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
                   href={`/${lang}/solucoes#automacao-processos`}
                   className="block px-4 py-2 text-sm hover:bg-muted transition-colors"
                 >
-                  {lang === "pt-BR" ? "Automação de Processos" : "Process Automation"}
+                  {lang === "pt-BR"
+                    ? "Automação de Processos"
+                    : "Process Automation"}
                 </Link>
                 <Link
                   href={`/${lang}/solucoes#automacao-marketing`}
                   className="block px-4 py-2 text-sm hover:bg-muted transition-colors"
                 >
-                  {lang === "pt-BR" ? "Automação em Marketing" : "Marketing Automation"}
+                  {lang === "pt-BR"
+                    ? "Automação em Marketing"
+                    : "Marketing Automation"}
                 </Link>
                 <Link
                   href={`/${lang}/solucoes#dev-customizado`}
@@ -84,7 +110,9 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
                   href={`/${lang}/solucoes#integracao-sistemas`}
                   className="block px-4 py-2 text-sm hover:bg-muted transition-colors"
                 >
-                  {lang === "pt-BR" ? "Integração de Sistemas" : "Systems Integration"}
+                  {lang === "pt-BR"
+                    ? "Integração de Sistemas"
+                    : "Systems Integration"}
                 </Link>
                 <Link
                   href={`/${lang}/solucoes#seguranca-dados`}
@@ -96,7 +124,9 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
                   href={`/${lang}/solucoes#web-scraping`}
                   className="block px-4 py-2 text-sm hover:bg-muted transition-colors"
                 >
-                  {lang === "pt-BR" ? "Web Scraping e Extração de Dados" : "Web Scraping & Data Extraction"}
+                  {lang === "pt-BR"
+                    ? "Web Scraping e Extração de Dados"
+                    : "Web Scraping & Data Extraction"}
                 </Link>
                 <Link
                   href={`/${lang}/solucoes`}
@@ -121,7 +151,10 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
                 >
                   {lang === "pt-BR" ? "Nossa História" : "Our Story"}
                 </Link>
-                <Link href={`/${lang}/about/team`} className="block px-4 py-2 text-sm hover:bg-muted transition-colors">
+                <Link
+                  href={`/${lang}/about/team`}
+                  className="block px-4 py-2 text-sm hover:bg-muted transition-colors"
+                >
                   {lang === "pt-BR" ? "Nosso Time" : "Our Team"}
                 </Link>
               </div>
@@ -133,12 +166,15 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
             className="px-3 py-1.5 bg-transparent border border-muted-foreground text-foreground font-medium text-sm rounded-md transition-all duration-300 hover:border-transparent hover:text-braza-dark hover:bg-gradient-to-r hover:from-braza-yellow hover:to-braza-green"
             onClick={(e) => {
               // Se estiver na página inicial, previna o comportamento padrão
-              if (window.location.pathname === `/${lang}` || window.location.pathname === `/${lang}/`) {
-                e.preventDefault()
+              if (
+                window.location.pathname === `/${lang}` ||
+                window.location.pathname === `/${lang}/`
+              ) {
+                e.preventDefault();
                 // Encontre a seção de contato e role até ela
-                const contactSection = document.getElementById("contact")
+                const contactSection = document.getElementById("contact");
                 if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: "smooth" })
+                  contactSection.scrollIntoView({ behavior: "smooth" });
                 }
               }
             }}
@@ -170,11 +206,17 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
               <div>
                 <div
                   className="flex items-center justify-between"
-                  onClick={() => setMobileDropdown(mobileDropdown === "solucoes" ? "" : "solucoes")}
+                  onClick={() =>
+                    setMobileDropdown(
+                      mobileDropdown === "solucoes" ? "" : "solucoes"
+                    )
+                  }
                 >
                   <span className="text-sm font-medium">{solutionsText}</span>
                   <ChevronDown
-                    className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${mobileDropdown === "solucoes" ? "rotate-180" : ""}`}
+                    className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${
+                      mobileDropdown === "solucoes" ? "rotate-180" : ""
+                    }`}
                   />
                 </div>
                 {mobileDropdown === "solucoes" && (
@@ -184,49 +226,63 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
                       className="text-sm text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {lang === "pt-BR" ? "Automação de Processos" : "Process Automation"}
+                      {lang === "pt-BR"
+                        ? "Automação de Processos"
+                        : "Process Automation"}
                     </Link>
                     <Link
                       href={`/${lang}/solucoes#automacao-marketing`}
                       className="text-sm text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {lang === "pt-BR" ? "Automação em Marketing" : "Marketing Automation"}
+                      {lang === "pt-BR"
+                        ? "Automação em Marketing"
+                        : "Marketing Automation"}
                     </Link>
                     <Link
                       href={`/${lang}/solucoes#dev-customizado`}
                       className="text-sm text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {lang === "pt-BR" ? "Dev Customizado" : "Custom Development"}
+                      {lang === "pt-BR"
+                        ? "Dev Customizado"
+                        : "Custom Development"}
                     </Link>
                     <Link
                       href={`/${lang}/solucoes#ia-conversacional`}
                       className="text-sm text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {lang === "pt-BR" ? "IA Conversacional" : "Conversational AI"}
+                      {lang === "pt-BR"
+                        ? "IA Conversacional"
+                        : "Conversational AI"}
                     </Link>
                     <Link
                       href={`/${lang}/solucoes#integracao-sistemas`}
                       className="text-sm text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {lang === "pt-BR" ? "Integração de Sistemas" : "Systems Integration"}
+                      {lang === "pt-BR"
+                        ? "Integração de Sistemas"
+                        : "Systems Integration"}
                     </Link>
                     <Link
                       href={`/${lang}/solucoes#seguranca-dados`}
                       className="text-sm text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {lang === "pt-BR" ? "Segurança de Dados" : "Data Security"}
+                      {lang === "pt-BR"
+                        ? "Segurança de Dados"
+                        : "Data Security"}
                     </Link>
                     <Link
                       href={`/${lang}/solucoes#web-scraping`}
                       className="text-sm text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {lang === "pt-BR" ? "Web Scraping e Extração de Dados" : "Web Scraping & Data Extraction"}
+                      {lang === "pt-BR"
+                        ? "Web Scraping e Extração de Dados"
+                        : "Web Scraping & Data Extraction"}
                     </Link>
                     <Link
                       href={`/${lang}/solucoes`}
@@ -242,11 +298,15 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
               <div>
                 <div
                   className="flex items-center justify-between"
-                  onClick={() => setMobileDropdown(mobileDropdown === "about" ? "" : "about")}
+                  onClick={() =>
+                    setMobileDropdown(mobileDropdown === "about" ? "" : "about")
+                  }
                 >
                   <span className="text-sm font-medium">{aboutUsText}</span>
                   <ChevronDown
-                    className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${mobileDropdown === "about" ? "rotate-180" : ""}`}
+                    className={`h-4 w-4 text-muted-foreground transition-transform duration-200 ${
+                      mobileDropdown === "about" ? "rotate-180" : ""
+                    }`}
                   />
                 </div>
                 {mobileDropdown === "about" && (
@@ -275,13 +335,16 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
               className="px-3 py-1.5 bg-transparent border border-muted-foreground text-foreground font-medium text-center text-sm rounded-md transition-all duration-300 hover:border-transparent hover:text-braza-dark hover:bg-gradient-to-r hover:from-braza-yellow hover:to-braza-green"
               onClick={(e) => {
                 // Se estiver na página inicial, previna o comportamento padrão
-                if (window.location.pathname === `/${lang}` || window.location.pathname === `/${lang}/`) {
-                  e.preventDefault()
+                if (
+                  window.location.pathname === `/${lang}` ||
+                  window.location.pathname === `/${lang}/`
+                ) {
+                  e.preventDefault();
                   // Encontre a seção de contato e role até ela
-                  const contactSection = document.getElementById("contact")
+                  const contactSection = document.getElementById("contact");
                   if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: "smooth" })
-                    setIsMenuOpen(false)
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                    setIsMenuOpen(false);
                   }
                 }
               }}
@@ -292,6 +355,5 @@ export default function Navbar({ lang, dictionary }: { lang: Locale; dictionary:
         </div>
       )}
     </header>
-  )
+  );
 }
-
