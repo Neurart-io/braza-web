@@ -1,65 +1,99 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useState } from "react"
-import { Send } from "lucide-react"
-import ScrollAnimationWrapper from "./scroll-animation-wrapper"
-import type { Locale } from "@/i18n-config"
+import type React from "react";
+import { useState } from "react";
+import { Send } from "lucide-react";
+import ScrollAnimationWrapper from "./scroll-animation-wrapper";
+import type { Locale } from "@/i18n-config";
 
-export default function ContactSection({ lang, dictionary }: { lang: Locale; dictionary: any }) {
+export default function ContactSection({
+  lang,
+  dictionary,
+}: {
+  lang: Locale;
+  dictionary: any;
+}) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
     message: "",
-  })
+  });
 
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   // Ensure dictionary and form properties exist with fallbacks
-  const formDictionary = dictionary?.form || {}
-  const namePlaceholder = formDictionary?.name || "Name"
-  const emailPlaceholder = formDictionary?.email || "Email"
-  const companyPlaceholder = formDictionary?.company || "Company"
-  const messagePlaceholder = formDictionary?.messagePlaceholder || "How can we help your company?"
-  const buttonDefault = formDictionary?.button?.default || "Send Message"
-  const buttonSending = formDictionary?.button?.sending || "Sending..."
-  const successTitle = formDictionary?.success?.title || "Message Sent!"
+  const formDictionary = dictionary?.form || {};
+  const namePlaceholder = formDictionary?.name || "Name";
+  const emailPlaceholder = formDictionary?.email || "Email";
+  const companyPlaceholder = formDictionary?.company || "Company";
+  const messagePlaceholder =
+    formDictionary?.messagePlaceholder || "How can we help your company?";
+  const buttonDefault = formDictionary?.button?.default || "Send Message";
+  const buttonSending = formDictionary?.button?.sending || "Sending...";
+  const successTitle = formDictionary?.success?.title || "Message Sent!";
   const successDescription =
-    formDictionary?.success?.description || "Thank you for your contact. Our team will get back to you soon."
+    formDictionary?.success?.description ||
+    "Thank you for your contact. Our team will get back to you soon.";
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-    // Simulação de envio
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitted(true)
-      setFormData({ name: "", email: "", company: "", message: "" })
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          to: "support@braza.io",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Falha no envio");
+      }
+
+      setSubmitted(true);
+      setFormData({ name: "", email: "", company: "", message: "" });
 
       // Reset do estado após 5 segundos
-      setTimeout(() => setSubmitted(false), 5000)
-    }, 1500)
-  }
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (error) {
+      console.error("Erro ao enviar mensagem:", error);
+      // Aqui você pode adicionar uma notificação de erro para o usuário
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 md:py-24 bg-[#101010] w-full">
+    <section
+      id="contact"
+      className="py-16 sm:py-20 md:py-24 bg-[#101010] w-full"
+    >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <ScrollAnimationWrapper>
             <div className="text-center mb-10 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-                <span className="gradient-text">{dictionary?.title?.highlighted || "Contact Us"}</span>
+                <span className="gradient-text">
+                  {dictionary?.title?.highlighted || "Contact Us"}
+                </span>
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-                {dictionary?.description || "We're ready to discuss how we can help your company."}
+                {dictionary?.description ||
+                  "We're ready to discuss how we can help your company."}
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -76,17 +110,32 @@ export default function ContactSection({ lang, dictionary }: { lang: Locale; dic
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4">{successTitle}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground">{successDescription}</p>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-4">
+                    {successTitle}
+                  </h3>
+                  <p className="text-sm sm:text-base text-muted-foreground">
+                    {successDescription}
+                  </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-6 sm:space-y-8"
+                >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
+                      <label
+                        htmlFor="name"
+                        className="block text-sm font-medium text-muted-foreground mb-2"
+                      >
                         {namePlaceholder}
                       </label>
                       <input
@@ -102,7 +151,10 @@ export default function ContactSection({ lang, dictionary }: { lang: Locale; dic
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-muted-foreground mb-2"
+                      >
                         {emailPlaceholder}
                       </label>
                       <input
@@ -119,7 +171,10 @@ export default function ContactSection({ lang, dictionary }: { lang: Locale; dic
                   </div>
 
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-muted-foreground mb-2">
+                    <label
+                      htmlFor="company"
+                      className="block text-sm font-medium text-muted-foreground mb-2"
+                    >
                       {companyPlaceholder}
                     </label>
                     <input
@@ -135,7 +190,10 @@ export default function ContactSection({ lang, dictionary }: { lang: Locale; dic
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-sm font-medium text-muted-foreground mb-2"
+                    >
                       {formDictionary?.message || "Message"}
                     </label>
                     <textarea
@@ -201,6 +259,5 @@ export default function ContactSection({ lang, dictionary }: { lang: Locale; dic
         </div>
       </div>
     </section>
-  )
+  );
 }
-
