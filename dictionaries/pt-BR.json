@@ -94,9 +94,9 @@
       "email": "Email",
       "company": "Empresa",
       "message": "Mensagem",
-      "messagePlaceholder": "Como podemos ajudar sua empresa?",
+      "messagePlaceholder": "Como podemos automatizar processos ou implementar IA na sua empresa?",
       "button": {
-        "default": "Enviar mensagem",
+        "default": "Solicitar diagnóstico gratuito",
         "sending": "Enviando..."
       },
       "success": {
@@ -324,4 +324,3 @@
     ]
   }
 }
-
