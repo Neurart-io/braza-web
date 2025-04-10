@@ -10,9 +10,12 @@ const ibmPlexSans = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Braza.io - Automação Inteligente com IA",
-  description: "Software House especializada em Automação com IA para clientes enterprise",
-    generator: 'v0.dev'
+  title: "Braza.io | Software & AI",
+  description: "Software House especializada em IA para clientes enterprise",
+    generator: 'v0.dev',
+    icons: {
+      icon: "/favicon.png"
+    }
 }
 
 export default function RootLayout({
