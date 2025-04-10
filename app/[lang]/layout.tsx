@@ -16,9 +16,9 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Braza.io - Automação Inteligente com IA",
+  title: "Braza.io | Software & AI",
   description:
-    "Software House especializada em Automação com IA para clientes enterprise",
+    "Software House especializada em IA para clientes enterprise",
 };
 
 export default async function RootLayout({
