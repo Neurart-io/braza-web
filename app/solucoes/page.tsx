@@ -254,7 +254,7 @@ export default function SolucoesPage() {
                   </div>
 
                   <div className="lg:col-span-8 space-y-8">
-                    <div className="bg-[#151515] p-6 md:p-8 rounded-lg border border-border">
+                    <div className="bg-[#0a0a0a] p-6 md:p-8 rounded-lg border border-border">
                       <h3 className="text-xl font-semibold mb-4">Sobre a Solução</h3>
                       <div className="space-y-4">
                         {solution.longDescription.map((paragraph, i) => (
@@ -266,7 +266,7 @@ export default function SolucoesPage() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="bg-[#151515] p-6 md:p-8 rounded-lg border border-border">
+                      <div className="bg-[#0a0a0a] p-6 md:p-8 rounded-lg border border-border">
                         <h3 className="text-xl font-semibold mb-4">Benefícios</h3>
                         <ul className="space-y-2">
                           {solution.benefits.map((benefit, i) => (
@@ -278,7 +278,7 @@ export default function SolucoesPage() {
                         </ul>
                       </div>
 
-                      <div className="bg-[#151515] p-6 md:p-8 rounded-lg border border-border">
+                      <div className="bg-[#0a0a0a] p-6 md:p-8 rounded-lg border border-border">
                         <h3 className="text-xl font-semibold mb-4">Casos de Uso</h3>
                         <ul className="space-y-2">
                           {solution.useCases.map((useCase, i) => (
