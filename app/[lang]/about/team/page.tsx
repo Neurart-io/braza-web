@@ -64,7 +64,7 @@ export default async function TeamPage({
       <Navbar lang={lang} dictionary={dictionary} />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-[#101010] relative overflow-hidden">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-[#050505] relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background to-transparent opacity-50"></div>
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -90,7 +90,7 @@ export default async function TeamPage({
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="bg-[#151515] rounded-lg overflow-hidden border border-border transition-all duration-300 hover:border-braza-yellow/50 hover:shadow-lg hover:shadow-braza-yellow/10"
+                className="bg-[#0a0a0a] rounded-lg overflow-hidden border border-border transition-all duration-300 hover:border-braza-yellow/50 hover:shadow-lg hover:shadow-braza-yellow/10"
               >
                 <div className="aspect-square relative overflow-hidden">
                   <img

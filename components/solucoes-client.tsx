@@ -73,7 +73,7 @@ export default function SolucoesClient({
       <Navbar lang={lang} dictionary={dictionary.navbar} />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-[#101010] relative overflow-hidden">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-[#050505] relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background to-transparent opacity-50"></div>
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -101,7 +101,7 @@ export default function SolucoesClient({
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                   <div className="lg:col-span-4 space-y-6">
                     <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-[#151515] rounded-lg border border-border">
+                      <div className="p-3 bg-[#0a0a0a] rounded-lg border border-border">
                         {getIconForSolution(solution.id)}
                       </div>
                       <h2 className="text-2xl md:text-3xl font-bold">{solution.title}</h2>
@@ -110,7 +110,7 @@ export default function SolucoesClient({
                   </div>
 
                   <div className="lg:col-span-8 space-y-8">
-                    <div className="bg-[#151515] p-6 md:p-8 rounded-lg border border-border">
+                    <div className="bg-[#0a0a0a] p-6 md:p-8 rounded-lg border border-border">
                       <h3 className="text-xl font-semibold mb-4">{aboutSolutionText}</h3>
                       <div className="space-y-4">
                         {Array.isArray(solution.longDescription) &&
@@ -123,7 +123,7 @@ export default function SolucoesClient({
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="bg-[#151515] p-6 md:p-8 rounded-lg border border-border">
+                      <div className="bg-[#0a0a0a] p-6 md:p-8 rounded-lg border border-border">
                         <h3 className="text-xl font-semibold mb-4">{benefitsText}</h3>
                         <ul className="space-y-2">
                           {Array.isArray(solution.benefits) &&
@@ -136,7 +136,7 @@ export default function SolucoesClient({
                         </ul>
                       </div>
 
-                      <div className="bg-[#151515] p-6 md:p-8 rounded-lg border border-border">
+                      <div className="bg-[#0a0a0a] p-6 md:p-8 rounded-lg border border-border">
                         <h3 className="text-xl font-semibold mb-4">{useCasesText}</h3>
                         <ul className="space-y-2">
                           {Array.isArray(solution.useCases) &&
@@ -171,7 +171,7 @@ export default function SolucoesClient({
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-16 md:py-24 bg-[#101010]">
+      <section id="contact" className="py-16 md:py-24 bg-[#050505]">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">

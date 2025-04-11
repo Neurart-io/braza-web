@@ -74,11 +74,11 @@ export default function ServicesSection({ lang, dictionary }: { lang: Locale; di
   return (
     <section
       id="services"
-      className="py-16 sm:py-20 md:py-24 bg-[#101010] relative overflow-hidden w-full"
+      className="py-16 sm:py-20 md:py-24 bg-[#050505] relative overflow-hidden w-full"
       ref={sectionRef}
     >
       {/* Simple solid background */}
-      <div className="absolute inset-0 bg-[#101010]"></div>
+      <div className="absolute inset-0 bg-[#050505]"></div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
@@ -105,12 +105,12 @@ export default function ServicesSection({ lang, dictionary }: { lang: Locale; di
             {items.map((service: any, index: number) => (
               <div
                 key={service?.id || index}
-                className="bg-[#151515] border border-[#222] p-3 sm:p-4 rounded-md opacity-0"
+                className="bg-[#151515] border border-[#050505] p-3 sm:p-4 rounded-md opacity-0"
                 style={{ animationDelay: `${index * 100}ms` }}
                 ref={(el) => (blocksRef.current[index] = el)}
               >
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="mt-1 p-1.5 sm:p-2 bg-[#222] rounded-md flex-shrink-0">
+                  <div className="mt-1 p-1.5 sm:p-2 bg-[#050505] rounded-md flex-shrink-0">
                     {getIcon(service?.id || "")}
                   </div>
                   <div>

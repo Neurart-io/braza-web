@@ -6,7 +6,7 @@ export default function Footer({ lang, dictionary }: { lang: Locale; dictionary:
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-background py-10 sm:py-16 border-t border-border w-full">
+    <footer className="bg-[#000000] py-10 sm:py-16 border-t border-border w-full">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8">
           {/* Logo and Description */}
@@ -100,7 +100,7 @@ export default function Footer({ lang, dictionary }: { lang: Locale; dictionary:
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
+        <div className="border-t border-[#151515] mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
           <p className="text-xs sm:text-sm text-muted-foreground">
             &copy; {currentYear} Braza.io. {dictionary?.copyright || "All rights reserved."} CNPJ: 45.858.805/0001-09
           </p>

@@ -74,6 +74,21 @@ export default function HeroSection({ lang, dictionary }: { lang: Locale; dictio
                 </span>
               </Link>
             </div>
+
+            {/* Microsoft for Startups Badge */}
+            <div className="flex items-center mt-8 opacity-0 animate-fade-up animate-delay-400">
+              <span className="text-sm text-white mr-3">Backed by</span>
+              <div className="flex items-center">
+                <img
+                  src="/images/microsoft-logo.png"
+                  alt="Microsoft Logo"
+                  className="h-12 w-auto"
+                  style={{ filter: "brightness(0) invert(1)" }} // Ensure logo is white
+                />
+                <span className="text-sm text-white mx-3">|</span>
+                <span className="text-sm text-white">Microsoft for Startups</span>
+              </div>
+            </div>
           </div>
 
           {/* Right side column kept empty as requested */}
@@ -85,4 +100,3 @@ export default function HeroSection({ lang, dictionary }: { lang: Locale; dictio
     </section>
   )
 }
-

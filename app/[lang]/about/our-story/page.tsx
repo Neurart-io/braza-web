@@ -35,7 +35,7 @@ export default function OurStoryPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-[#101010] relative overflow-hidden">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-[#050505] relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background to-transparent opacity-50"></div>
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -105,7 +105,7 @@ export default function OurStoryPage() {
       </section>
 
       {/* Static Footer */}
-      <footer className="bg-background py-10 sm:py-16 border-t border-border w-full">
+      <footer className="bg-[#000000] py-10 sm:py-16 border-t border-[#151515] w-full">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8">
             {/* Logo and Description */}

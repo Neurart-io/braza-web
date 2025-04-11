@@ -80,7 +80,7 @@ export default function ContactSection({
   return (
     <section
       id="contact"
-      className="py-16 sm:py-20 md:py-24 bg-[#101010] w-full"
+      className="py-16 sm:py-20 md:py-24 bg-[#050505] w-full"
     >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
@@ -99,7 +99,7 @@ export default function ContactSection({
           </ScrollAnimationWrapper>
 
           <ScrollAnimationWrapper direction="right" delay={200}>
-            <div className="bg-background p-6 sm:p-8 md:p-10">
+            <div className="bg-[#0a0a0a] p-6 sm:p-8 md:p-10">
               {submitted ? (
                 <div className="text-center py-10 sm:py-16">
                   <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full gradient-bg mb-4 sm:mb-6">
@@ -145,7 +145,7 @@ export default function ContactSection({
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-muted border-0 focus:outline-none focus:ring-2 focus:ring-braza-yellow text-foreground rounded-md"
+                        className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-[#151515] border-0 focus:outline-none focus:ring-2 focus:ring-braza-yellow text-foreground rounded-md"
                         placeholder={namePlaceholder}
                       />
                     </div>
@@ -164,7 +164,7 @@ export default function ContactSection({
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-muted border-0 focus:outline-none focus:ring-2 focus:ring-braza-yellow text-foreground rounded-md"
+                        className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-[#151515] border-0 focus:outline-none focus:ring-2 focus:ring-braza-yellow text-foreground rounded-md"
                         placeholder={emailPlaceholder}
                       />
                     </div>
@@ -184,7 +184,7 @@ export default function ContactSection({
                       value={formData.company}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-muted border-0 focus:outline-none focus:ring-2 focus:ring-braza-yellow text-foreground rounded-md"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-[#151515] border-0 focus:outline-none focus:ring-2 focus:ring-braza-yellow text-foreground rounded-md"
                       placeholder={companyPlaceholder}
                     />
                   </div>
@@ -203,7 +203,7 @@ export default function ContactSection({
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-muted border-0 focus:outline-none focus:ring-2 focus:ring-braza-yellow text-foreground rounded-md"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-[#151515] border-0 focus:outline-none focus:ring-2 focus:ring-braza-yellow text-foreground rounded-md"
                       placeholder={messagePlaceholder}
                       resize="none"
                     ></textarea>

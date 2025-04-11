@@ -14,11 +14,11 @@ export default function AboutSection({ lang, dictionary }: { lang: Locale; dicti
   const metrics = Array.isArray(dictionary?.metrics) ? dictionary.metrics : []
 
   return (
-    <section id="about" className="py-16 sm:py-20 md:py-24 bg-muted w-full">
+    <section id="about" className="py-16 sm:py-20 md:py-24 bg-[#080808] w-full">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <ScrollAnimationWrapper direction="left">
-            <div className="relative h-[350px] sm:h-[450px] md:h-[575px] lg:h-[690px] w-full sm:w-[90%] md:w-[80%] mx-auto overflow-hidden rounded-xl border-2 border-[#222] shadow-lg">
+          <div className="relative h-[350px] sm:h-[450px] md:h-[575px] lg:h-[690px] w-full sm:w-[90%] md:w-[80%] mx-auto overflow-hidden rounded-xl border-2 border-[#151515] shadow-lg">
               <div className="absolute inset-0 bg-gradient-to-b from-braza-yellow/10 to-braza-green/10 z-0"></div>
               <video autoPlay loop muted playsInline className="w-full h-full object-cover relative z-10 opacity-20">
                 <source
@@ -53,7 +53,7 @@ export default function AboutSection({ lang, dictionary }: { lang: Locale; dicti
                 {metrics.map((metric: any, index: number) => (
                   <div
                     key={index}
-                    className="bg-[#1a1a1a] p-4 sm:p-6 rounded-lg border border-braza-yellow/10 shadow-lg"
+                    className="bg-[#0a0a0a] p-4 sm:p-6 rounded-lg border border-braza-yellow/10 shadow-lg"
                   >
                     <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
                       <span className="gradient-text">{metric?.value || ""}</span>
