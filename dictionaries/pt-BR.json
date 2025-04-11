@@ -7,10 +7,10 @@
   },
   "hero": {
     "title": {
-      "first": "Escale seu Negócio com",
-      "highlighted": "Automação e Inteligência Artificial"
+      "first": "Transforme seu Negócio com",
+      "highlighted": "Desenvolvimento Web, Mobile e IA"
     },
-    "description": "Transformamos processos empresariais complexos em soluções automatizadas com IA, permitindo que sua empresa se concentre no que realmente importa.",
+    "description": "Convertemos processos empresariais complexos em soluções automatizadas com IA, permitindo que sua empresa se concentre no que realmente importa.",
     "button": {
       "default": "Entre em contato",
       "hover": "Vamos!"
@@ -24,9 +24,9 @@
     "description": "Desenvolvemos tecnologias avançadas que impulsionam a transformação digital das empresas.",
     "items": [
       {
-        "id": "automacao-processos",
-        "title": "Automação de Processos",
-        "description": "Otimize fluxos de trabalho e elimine tarefas repetitivas com nossas soluções de automação inteligente."
+        "id": "dev-customizado",
+        "title": "Dev Customizado",
+        "description": "Soluções de software sob medida para os desafios específicos do seu negócio."
       },
       {
         "id": "ia-conversacional",
@@ -49,9 +49,9 @@
         "description": "Conecte plataformas e aplicações para um fluxo de dados contínuo e eficiente."
       },
       {
-        "id": "dev-customizado",
-        "title": "Dev Customizado",
-        "description": "Soluções de software sob medida para os desafios específicos do seu negócio."
+        "id": "automacao-processos",
+        "title": "Automação de Processos",
+        "description": "Otimize fluxos de trabalho e elimine tarefas repetitivas com nossas soluções de automação inteligente."
       },
       {
         "id": "seguranca-dados",
