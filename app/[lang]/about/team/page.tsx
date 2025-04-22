@@ -31,7 +31,7 @@ export default async function TeamPage({
     {
       name: "Lucas Santos",
       role: lang === "pt-BR" ? "CTO & Co-fundador" : "CTO & Co-founder",
-      image: "/images/lucas-santos.png",
+      image: "/images/lucas-santos.jpeg",
       bio:
         lang === "pt-BR"
           ? "Ex-Spread e Loop, Lucas tem longa carreira em Desenvolvimento Full Stack."

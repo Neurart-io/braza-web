@@ -5,8 +5,8 @@ import type { Locale } from "@/i18n-config"
 
 export default function HeroSection({ lang, dictionary }: { lang: Locale; dictionary: any }) {
   // Extract text values safely with fallbacks
-  const titleFirst = dictionary?.title?.first || "Scale Your Business with"
-  const titleHighlighted = dictionary?.title?.highlighted || "Automation and AI"
+  const titleFirst = dictionary?.title?.first || "Transform your business with"
+  const titleHighlighted = dictionary?.title?.highlighted || "Custom Software and Artificial Intelligence"
   const description =
     typeof dictionary?.description === "string"
       ? dictionary.description
