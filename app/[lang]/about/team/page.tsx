@@ -18,7 +18,7 @@ export default async function TeamPage({
     {
       name: "Victor Rodrigues",
       role: lang === "pt-BR" ? "CEO & Co-fundador" : "CEO & Co-founder",
-      image: "/images/victor-rodrigues.png",
+      image: "/images/victor-rodrigues.jpeg",
       bio:
         lang === "pt-BR"
           ? "Ex-Santander e BRK, Victor tem muitos anos de experiência em Dados e IA."
