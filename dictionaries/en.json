@@ -35,7 +35,7 @@
       },
       {
         "id": "web-scraping",
-        "title": "Web Scraping & Data Extraction",
+        "title": "Data Extraction",
         "description": "Monitor prices, trends, and extract data from websites for business intelligence."
       },
       {
@@ -203,7 +203,7 @@
       },
       {
         "id": "web-scraping",
-        "title": "Web Scraping & Data Extraction",
+        "title": " Data Extraction",
         "description": "Monitor prices, trends, and extract data from websites for business intelligence.",
         "longDescription": [
           "Our Web Scraping and Data Extraction solution allows you to collect, process, and analyze information from various online sources in an automated and real-time manner.",

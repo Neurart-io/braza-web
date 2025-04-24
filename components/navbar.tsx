@@ -115,18 +115,12 @@ export default function Navbar({
                     : "Systems Integration"}
                 </Link>
                 <Link
-                  href={`/${lang}/solucoes#seguranca-dados`}
-                  className="block px-4 py-2 text-sm hover:bg-muted transition-colors"
-                >
-                  {lang === "pt-BR" ? "Segurança de Dados" : "Data Security"}
-                </Link>
-                <Link
                   href={`/${lang}/solucoes#web-scraping`}
                   className="block px-4 py-2 text-sm hover:bg-muted transition-colors"
                 >
                   {lang === "pt-BR"
-                    ? "Web Scraping e Extração de Dados"
-                    : "Web Scraping & Data Extraction"}
+                    ? "Extração de Dados"
+                    : "Data Extraction"}
                 </Link>
                 <Link
                   href={`/${lang}/solucoes`}
@@ -267,22 +261,13 @@ export default function Navbar({
                         : "Systems Integration"}
                     </Link>
                     <Link
-                      href={`/${lang}/solucoes#seguranca-dados`}
-                      className="text-sm text-muted-foreground"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {lang === "pt-BR"
-                        ? "Segurança de Dados"
-                        : "Data Security"}
-                    </Link>
-                    <Link
                       href={`/${lang}/solucoes#web-scraping`}
                       className="text-sm text-muted-foreground"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {lang === "pt-BR"
-                        ? "Web Scraping e Extração de Dados"
-                        : "Web Scraping & Data Extraction"}
+                        ? "Extração de Dados"
+                        : "Data Extraction"}
                     </Link>
                     <Link
                       href={`/${lang}/solucoes`}
